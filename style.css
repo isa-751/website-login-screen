@@ -1,0 +1,136 @@
+.login-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+    width: 350px;
+    padding: 40px 40px 25px 40px;
+    background: rgba(255, 255, 255, 0.09);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 0.95rem;
+}
+
+.options a {
+    color: #b3e0ff;
+    text-decoration: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: rgba(255,255,255,0.4);
+}
+
+.register {
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+.register a {
+    color: #b3e0ff;
+    text-decoration: none;
+}
+
+/* Sosyal medya logoları için daire ve renksiz stil */
+.social-links {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.social-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    background: rgba(255,255,255,0.3);
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.14);
+    text-decoration: none;
+}
+
+.social-circle i {
+    color: #888; /* Gri renkte ikonlar */
+    transition: color 0.2s;
+}
+
+/* Hover ile ikonlar daha canlı renkli olur */
+.social-circle.insta:hover i {
+    color: #fd1d1d; /* Instagram kırmızı-pembe */
+}
+.social-circle.github:hover i {
+    color: #000; /* GitHub siyah */
+}
+.social-circle.telegram:hover i {
+    color: #0088cc; /* Telegram canlı mavi */
+}
+.social-circle.discord:hover i {
+    color: #5865F2; /* Discord canlı mor */
+}
+
+.social-circle:hover {
+    transform: scale(1.14);
+    box-shadow: 0 2px 16px rgba(0,0,0,0.22);
+    background: rgba(255,255,255,0.6);
+}
